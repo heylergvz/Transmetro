@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+   }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/logbg1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  #logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    color: #000e6b;
+}
+.container {
+    position: relative;
+    width: 600px;
+    height: 650px;
+    background: transparent;
+    border: 0px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    justify-content: center;
+    backdrop-filter: blur(95px);
+    margin: 20px auto;
+    height: auto;
+  }
+
+  h1 {
+    padding-top: 2%;
+    text-align: center;
+    border-bottom: 2px solid #0022ff;
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  .buses, .choferes {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .bus, .chofer {
+    cursor: pointer;
+  }
+  
+  .available {
+    color: #0022ff;
+  }
+  
+  .assigned {
+    color: red;
+  }
+
+  .unassign-btn {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px;
+    
+    cursor: pointer;
+  }
+  .unassign-btn:hover {
+    background-color: #0022ff;
+  }
+  
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    width: auto;
+ 
+  }
+  button:hover {
+    background-color: #0022ff;
+  }
+
+  @media (max-width: 360px){
+    .container {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
+    }
+}

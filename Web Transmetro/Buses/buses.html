@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal de Buses</title>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="buses.css">
+    <!-- boxicons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Remixi link-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- AOS scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<!--------------------------------- Fin head ------------------------------------>
+<body>
+    <button id="logout-btn">Cerrar sesión</button>
+    <section>
+  <div class="container" data-aos="zoom-in">
+    <ul>
+    <h1>Asignación de Pilotos a Buses </h1>
+    </ul>
+    <div class="choferes">
+        <h2><br>Pilotos</h2>
+        <ul id="chofer-list">
+          <li id="choferA" class="chofer available">Antonio Perez</li>
+          <li id="choferB" class="chofer available">Jorge Soto</li>
+        </ul>
+        <button id="add-chofer-btn">Agregar Piloto</button>
+      </div>
+
+
+    <div class="buses">
+      <h2>Buses</h2>
+      <ul id="bus-list">
+        <li id="bus1" class="bus available">Línea 1<button class="unassign-btn" >Desasignar</button></li>
+        <li id="bus2" class="bus available">Línea 2<button class="unassign-btn" >Desasignar</button></li>
+      </ul>
+      <button id="add-bus-btn">Agregar Bus</button>
+    </div>
+    
+  </div>
+</section>
+  <script src="buses.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1450,
+    });
+  </script>
+</body>
+</html>
